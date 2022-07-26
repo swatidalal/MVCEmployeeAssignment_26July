@@ -1,0 +1,119 @@
+﻿@{
+     ViewData["Title"] = "Employee Page";
+
+}
+
+<html>
+    <head>
+        <style>
+		body{
+			background-color: pink;
+		}
+		
+		h1{
+			padding: 10px;
+			text-align: center;
+            color: green;
+		}
+		
+		input{
+			height: 30px;
+			border-radius: 10px;
+			border: none;
+			
+		}
+        
+	</style>
+    </head>
+
+<body>
+<h1>Employee Controller</h1>
+
+ <form >
+    <div class="form-group">
+    <label for="FirstName">First Name</label>
+    <input type="text" class="form-control" id="FirstName"  name="FirstName" >  
+  </div>
+  <div class="form-group">
+    <label for="LastName">Last Name</label>
+    <input type="text" class="form-control" id="LastName" name="LastName" >
+  </div>
+  <div class="form-group">
+    <label for="Mobile">Mobile No.</label>
+    <input type="number" class="form-control" id="Mobile" name="Mobile" >
+  </div>
+  <div class="form-group">
+     <label for="Email">Email Address</label>
+    <input type="email" class="form-control" id="Email" name="Email" >
+    
+  </div>
+  <div class="row form-group">
+      <div class="col-sm-12 col-lg-2">
+          <div class="form-group">
+              <label for="Address1">Address 1</label>
+                <textarea id="Address1" name="Address_1"></textarea>
+          </div>
+
+      </div>
+       <div class="col-sm-12 col-lg-2">
+    
+                  <label for="Address2">Address 2</label>
+                 <textarea id="Address2" name="Address_2"> </textarea>
+ 
+
+      </div>
+
+  </div>
+ 
+  
+  <div class="form-group mt-3">
+  <div class="row">
+      <div class="col-lg-4 col-sm-12">
+       <label for="city">City </label>
+     	<select id="inputCity" class="form-control">
+        <option selected>Choose city...</option>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Hydrabad</option>
+      </select>
+
+
+      </div>
+      <div class="col-lg-4 col-sm-12">
+          <label for="postal">Postal Code </label>
+         	<select id="inputPostal" class="form-control">
+        <option selected>Choose Postal code...</option>
+        <option>1234</option>
+        <option>+323</option>
+        <option>34656</option>
+      </select>
+
+      </div>
+
+      <div class="col-lg-4 col-sm-12">
+          <label for="country">Country </label>
+          	<select id="inputCity" class="form-control">
+        <option selected>Choose country...</option>
+        <option>India</option>
+        <option>China</option>
+        <option>Japan</option>
+      </select>
+
+
+
+      </div>
+
+  </div>
+  </div>
+   <br />
+   <br />
+  <div class="d-grid gap-2">
+  
+  <button type="submit" class="btn btn-primary" asp-area="" asp-controller="Employee" asp-action="Success">Submit</button>
+</div>
+           
+      </form>
+      </body>
+      </html>
+
+   
